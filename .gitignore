@@ -1,0 +1,9 @@
+# Covers JetBrains IDEs: IntelliJ
+
+*.iml
+.idea/
+*.jar
+*.class
+*/target/
+/.gitignore
+
