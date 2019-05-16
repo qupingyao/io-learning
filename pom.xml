@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yqp.io</groupId>
+    <artifactId>io-learning</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <modules>
+        <module>io-client</module>
+        <module>io-server</module>
+        <module>io-common</module>
+    </modules>
+
+    <properties>
+        <com.yqp.io.version>1.0.0-SNAPSHOT</com.yqp.io.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.yqp.io</groupId>
+                <artifactId>io-common</artifactId>
+                <version>${com.yqp.io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yqp.io</groupId>
+                <artifactId>io-client</artifactId>
+                <version>${com.yqp.io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yqp.io</groupId>
+                <artifactId>io-server</artifactId>
+                <version>${com.yqp.io.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
